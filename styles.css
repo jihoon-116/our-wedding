@@ -531,19 +531,19 @@ a {
 }
 
 .hero__date-day {
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 500;
 }
 
 .hero__date-time {
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   font-weight: 700;
   letter-spacing: 2px;
   color: #D4AF37;
 }
 
 .hero__venue {
-  font-size: 0.8125rem;
+  font-size: 0.9375rem;
   font-weight: 300;
   letter-spacing: 2px;
   color: var(--color-gold-light);
