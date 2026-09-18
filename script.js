@@ -166,7 +166,18 @@
   function initHero() {
     $('#heroPhoto').src = 'images/hero/1.jpg';
     $('#heroNames').textContent = `${CONFIG.groom.name}  ·  ${CONFIG.bride.name}`;
-    $('#heroDate').textContent = formatDate(CONFIG.wedding.date, CONFIG.wedding.time);
+ const date = new Date(CONFIG.wedding.date + 'T00:00:00');
+
+ const days = ['일', '월', '화', '수', '목', '금', '토'];
+ const year = date.getFullYear();
+ const month = date.getMonth() + 1;
+ const day = date.getDate();
+ const dayOfWeek = days[date.getDay()];
+
+$('#heroDate').innerHTML = `
+  <span class="hero__date-day">${year}년 ${month}월 ${day}일 ${dayOfWeek}요일</span>
+  <span class="hero__date-time">${CONFIG.wedding.time.replace(':', '시 ')}분</span>
+`;
     $('#heroVenue').textContent = CONFIG.wedding.venue;
   }
 
