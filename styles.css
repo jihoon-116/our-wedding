@@ -526,8 +526,8 @@ a {
   margin-top: 0.5rem;
   line-height: 1.5;
   letter-spacing: 1.5px;
-  color: #D4AF37;
-  opacity: 1;
+  color: var(--color-gold-light);
+  opacity: 0.85;
 }
 
 .hero__date-day {
@@ -539,7 +539,7 @@ a {
   font-size: 1.125rem;
   font-weight: 700;
   letter-spacing: 2px;
-  color: #D4AF37;
+  color: var(--color-gold-light);
 }
 
 .hero__venue {
